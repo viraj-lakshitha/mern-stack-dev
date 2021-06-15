@@ -48,7 +48,7 @@ Mongo Express ReactJS and NodeJS | LinkedIn Learning Path [Link](https://www.lin
 
 - By editing the script block in the package.json file, you can create new command lines (Eg: adding this code snippet to script in package.json `"createang" : "npx -p @angular/cli ng new myapp"` then run `npm createang` in cmd to create angular app called 'myapp' directly)
 
-#### Alternative for NPM
+### Alternative for NPM
 
 - Yarn => [https://yarnpkg.com/](https://yarnpkg.com/) - Introduced by the facebook team
 
