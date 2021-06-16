@@ -14,6 +14,27 @@ app.get("/", (req,res) => {
     res.json(data);
 })
 
+// You can have multiple method, but only have one response
+app.get('/item/:id', (req,res) => {
+    let user = Number(req.params.id); // Convert String to a Number
+    res.send(data[user-1]);
+
+    next(); // to move next func
+}, (req,res) => {
+    console.log('Second Function');
+});
+
+app.get('/test', (req, res) => {
+
+    // Check : https://expressjs.com/en/guide/routing.html
+
+    // res.download('images/rocket.jpg'); // download file
+
+    // res.redirect('/') // redirected to the '/' page
+
+    // res.end(); // end the response
+})
+
 app.post("/post", (req,res) => {
     res.send('<h1>POST Request on PORT=3000</h1>');
 })

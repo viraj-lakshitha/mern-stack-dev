@@ -107,6 +107,33 @@ Mongo Express ReactJS and NodeJS | LinkedIn Learning Path [Link](https://www.lin
 }
 ``
 
+- Create file called ***"index.js"*** and update with  following code and run `npm start`
+```
+import express from "express";
+
+const app = express();
+const PORT = 3000;
+
+app.get("/", (req,res) => {
+    res.send('<h1>Hello World !</h1>');
+})
+
+app.listen(PORT, () => { // all command display in server
+    console.log(`Server Running on ${PORT}`);
+})
+```
+
+- Install Serve-Favicon to Handle the Errors
+    - `npm install --save serve-favicon`
+
+
+- Debugging in Express Application
+    - Method 01: Open terminal => `set DEBUG=express:* & node index.js`
+    - Method 02: Update package.json => script => `"debug": "set DEBUG=express:* & nodemon ./index.js --exec babel-node -e js"`
+ 
+
+
+
 ## MongoDB
 
 ---
