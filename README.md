@@ -70,6 +70,43 @@ Mongo Express ReactJS and NodeJS | LinkedIn Learning Path [Link](https://www.lin
 
 [Link to Documentation](https://expressjs.com/en/starter/installing.html)
 
+### Build an Express Project from Generator
+
+- Install Express and Express Generator
+    - Open terminal and run `npm install express express-generator -g`
+
+- Generate Express Project using Express Generator
+    - Open terminal and run `express --view=hbs` and for more command `express -h` in there you can change the type of stylesheets as well.
+
+- Run the generated project,
+    - First install all dependencies `npm install`
+    - Run the project `npm start`
+
+### Build a project from Scratch
+
+- Install Express and Nodemon (Nodemon is a tool that helps develop node. js based applications by automatically restarting the node application when file changes in the directory are detected )
+    - `npm install --save express nodemon`
+
+- Install Dev Dependencies to run the ES6 code
+    -`npm install --save-dev babel-cli babel-preset-env babel-preset-stage-0`
+
+- Update the Script block in package.json file
+``
+"scripts": {
+    "start": "nodemon ./index.js --exec babel-node -e js"
+  },
+``
+
+- Then create a file as ***".babelrc"*** and update file as follows
+``
+{
+    "presets": [
+        "env",
+        "stage-0"
+    ]
+}
+``
+
 ## MongoDB
 
 ---
