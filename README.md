@@ -1,6 +1,6 @@
 # Mern Stack Devalopment 💻🔥
 
-![mern-stack](https://blog.hyperiondev.com/wp-content/uploads/2018/09/Blog-Article-MERN-Stack.jpg)
+![mern-stack](https://www.educative.io/api/edpresso/shot/5266982947520512/image/6392882854363136)
 <br>
 Mongo Express ReactJS and NodeJS | LinkedIn Learning Path [Link](https://www.linkedin.com/learning/paths/become-a-mern-stack-javascript-developer?u=76664938)
 
